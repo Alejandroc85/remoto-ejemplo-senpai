@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>    
+<!-- <style>
+    * {
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.background-full {
+    position: relative;
+}
+.container-tarjeta {
+    z-index: 1;
+    position: relative;
+    height: 550px;
+    width: 550px;
+}
+.tarjeta-front {
+    position: relative;
+    left: -170px;
+}
+
+.tarjeta-back {
+    position: relative;
+    right: 15px;
+    top: 20px;
+}
+
+.container-form {
+    width: 500px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+</style> -->
+</head>
+<body class="h-[100vh]">
+    <main class="flex justify-center items-center">
+      
+       
+        <div class="background-full relative">
+            <img src="./interactive-card-form/imágenes/bg-main-desktop.png" alt="color background">
+        </div>
+
+
+        <div class="container-tarjeta z-1">
+            <div class="tarjeta-front">
+                <img src="./interactive-card-form/imágenes/bg-card-front.png" alt="tarjeta de credito frontal">
+            </div>
+            <div class="tarjeta-back relative ">
+                <img src="./interactive-card-form/imágenes/bg-card-back.png" alt="tarjeta de credito trasera">
+            </div>
+        </div>
+        <div class="container-form">
+            <form action="">
+                <label for="cardholder-name">CARDHOLDER NAME:</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required><br><br>        
+                <label for="card-number">CARD MUMBER:</label>
+                <input type="number" id="card-number" name="card-number" required><br><br>        
+                <label for="expiration-date">EXPIRATION DATE (MM/YY):</label>
+                <label for="cvc">CVC:</label>  
+                <input type="number" id="expiration-month" name="expiration-month" required> <input type="number" id="expiration-year" name="expiration-year" required><br><br>     
+                <input type="text"  id="cvc" name="cvc" required placeholder="000"
+                minlength="3"
+                maxlength="3"                
+                pattern="[0-9]{3}"><br><br>        
+                <input type="submit" maxlength="" value="Confirm">
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>
